@@ -27,3 +27,9 @@ button:hover {
     background: black;
     color: white;
 }
+
+#reader {
+    width: 300px;
+    height: 300px;
+    margin-top: 2em;
+}
