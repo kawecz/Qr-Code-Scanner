@@ -33,3 +33,7 @@ button:hover {
     height: 300px;
     margin-top: 2em;
 }
+
+.hidden {
+    display: none;
+}
