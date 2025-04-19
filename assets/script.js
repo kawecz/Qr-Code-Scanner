@@ -13,9 +13,14 @@ const validCodes = {
     }
   }
 
+  // Iniciar a leitura do QR Code ao clicar no botão
+  document.getElementById("start-camera-btn").addEventListener("click", function() {
+    document.getElementById("reader").classList.remove("hidden"); // Torna a área de leitura visível
+    startCamera(); // Inicia a câmera
+  });
+
   const html5QrCode = new Html5Qrcode("reader");
 
-  // Função para iniciar a câmera
   function startCamera() {
     html5QrCode.start(
       { facingMode: "environment" },
@@ -32,13 +37,10 @@ const validCodes = {
         }
       },
       (errorMessage) => {
-        // Ignore errors, but you pode logar se necessário
+        // Ignore errors, but você pode logar se necessário
       }
     ).catch((err) => {
       document.getElementById("error").textContent = `Camera error: ${err}`;
       document.getElementById("error").classList.remove("hidden");
     });
   }
-
-  // Inicia a câmera ao carregar a página
-  window.onload = startCamera;
