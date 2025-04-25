@@ -1,5 +1,5 @@
 const validCodes = {
-  "bookqr://test123": "https://www.youtube.com/live/sF80I-TQiW0?si=s8HRY07PwFlGRf22"
+  "bookqr://thelinkqrcode": "https://www.youtube.com/live/sF80I-TQiW0?si=s8HRY07PwFlGRf22"
 };
 
 function isValidBookQR(text) {
