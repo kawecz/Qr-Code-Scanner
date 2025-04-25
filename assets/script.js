@@ -1,5 +1,5 @@
 const validCodes = {
-  "bookqr://theofclinkpage":
+  "bookqr://test123":
     "https://www.youtube.com/live/sF80I-TQiW0?si=s8HRY07PwFlGRf22",
 };
 
