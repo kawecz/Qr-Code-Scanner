@@ -1,9 +1,9 @@
 const validCodes = {
-  "bookqr://thelinkqrcode": "https://www.youtube.com/live/sF80I-TQiW0?si=s8HRY07PwFlGRf22"
+  "thelinkqrcode": "https://www.youtube.com/live/sF80I-TQiW0?si=s8HRY07PwFlGRf22"
 };
 
 function isValidBookQR(text) {
-  return text.startsWith("bookqr://") && validCodes[text];
+  return validCodes[text];
 }
 
 function redirectToVideo(code) {
