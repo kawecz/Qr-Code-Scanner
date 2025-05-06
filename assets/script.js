@@ -1,5 +1,5 @@
 const validCodes = {
-  "thelinkqrcode": "https://www.youtube.com/live/sF80I-TQiW0?si=s8HRY07PwFlGRf22"
+  "thelinkqrcode": "https://kawecz.github.io/Clara-Webpage/home/index.html"
 };
 
 function isValidBookQR(text) {
